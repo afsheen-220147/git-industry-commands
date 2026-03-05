@@ -418,4 +418,126 @@ git commit --amend --no-edit
 
 **Screenshot**
 
-![git commit no edit](screenshots/git_commit_no_edit.png)
+![git commit no edit](screenshots/git_noedit.png)
+
+## git branch
+
+**Syntax**
+
+git branch
+
+**Purpose**
+
+Lists all local branches in the repository.
+
+**Example**
+
+git branch
+
+**Screenshot**
+
+![git branch](screenshots/git_branch.png)
+
+
+## git branch -a
+
+**Syntax**
+
+git branch -a
+
+**Purpose**
+
+Displays all branches including local and remote branches.
+
+**Example**
+
+git branch -a
+
+
+## git branch -d
+
+**Syntax**
+
+git branch -d <branch-name>
+
+**Purpose**
+
+Deletes a branch safely. Git will prevent deletion if the branch contains unmerged changes.
+
+**Example**
+
+git branch -d feature1
+
+
+## git branch -D
+
+**Syntax**
+
+git branch -D <branch-name>
+
+**Purpose**
+
+Force deletes a branch even if it contains unmerged changes.
+
+**Example**
+
+git branch -D feature2
+
+## git checkout
+
+**Syntax**
+
+git checkout <branch-name>
+
+**Purpose**
+
+Switches from the current branch to another existing branch.
+
+**Example**
+
+git checkout main
+
+
+## git checkout -b
+
+**Syntax**
+
+git checkout -b <branch-name>
+
+**Purpose**
+
+Creates a new branch and immediately switches to it.
+
+**Example**
+
+git checkout -b feature1
+
+
+## git switch
+
+**Syntax**
+
+git switch <branch-name>
+
+**Purpose**
+
+Switches to another branch using the modern Git command introduced as a safer alternative to checkout.
+
+**Example**
+
+git switch main
+
+
+## git switch -c
+
+**Syntax**
+
+git switch -c <branch-name>
+
+**Purpose**
+
+Creates a new branch and switches to it using the newer Git switch command.
+
+**Example**
+
+git switch -c feature2
