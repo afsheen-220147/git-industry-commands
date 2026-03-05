@@ -177,3 +177,245 @@ Displays commit history as a visual branch graph.
 **Screenshot**
 
 ![log](screenshots/status.png)
+
+## git status
+
+**Syntax**
+
+git status
+
+**Purpose**
+
+Shows the current status of files in the repository.
+
+**Example**
+
+git status
+
+**Screenshot**
+
+![status](screenshots/diff.png)
+
+## git log
+
+**Syntax**
+
+git log
+
+**Purpose**
+
+Displays the commit history of the repository.
+
+**Screenshot**
+
+![log](screenshots/diff.png)
+
+## git log --oneline
+
+**Syntax**
+
+git log --oneline
+
+**Purpose**
+
+Shows commit history in a compact single-line format.
+
+**Screenshot**
+
+![log](screenshots/diff.png)
+
+## git log --graph
+
+**Syntax**
+
+git log --graph
+
+**Purpose**
+
+Displays commit history as a visual branch graph.
+
+**Screenshot**
+
+![log](screenshots/diff.png)
+
+
+## git add
+
+**Syntax**
+
+git add <file-name>
+
+**Purpose**
+
+Adds a specific file to the staging area so it will be included in the next commit.
+
+**Example**
+
+git add demo.txt
+
+
+## git add .
+
+**Syntax**
+
+git add .
+
+**Purpose**
+
+Adds all modified and new files in the current directory to the staging area.
+
+**Example**
+
+git add .
+
+
+## git add -p
+
+**Syntax**
+
+git add -p
+
+**Purpose**
+
+Allows interactive staging of changes. It lets you choose specific parts of files to stage.
+
+**Example**
+
+git add -p
+
+
+## git restore
+
+**Syntax**
+
+git restore <file-name>
+
+**Purpose**
+
+Restores a file in the working directory to its last committed state.
+
+**Example**
+
+git restore demo.txt
+
+
+## git restore --staged
+
+**Syntax**
+
+git restore --staged <file-name>
+
+**Purpose**
+
+Removes a file from the staging area but keeps it in the working directory.
+
+**Example**
+
+git restore --staged demo.txt
+
+
+## git rm
+
+**Syntax**
+
+git rm <file-name>
+
+**Purpose**
+
+Removes a file from both the working directory and the Git repository.
+
+**Example**
+
+git rm demo.txt
+
+
+## git mv
+
+**Syntax**
+
+git mv <old-file-name> <new-file-name>
+
+**Purpose**
+
+Moves or renames a file and automatically stages the change.
+
+**Example**
+
+git mv old.txt new.txt
+
+
+## git commit
+
+**Syntax**
+
+git commit
+
+**Purpose**
+
+Creates a commit by saving staged changes to the repository, after adding.
+
+**Example**
+
+git commit
+
+**Screenshot**
+
+![git commit](screenshots/git_commit.png)
+
+---
+
+## git commit -m
+
+**Syntax**
+
+git commit -m "commit message"
+
+**Purpose**
+
+Creates a commit with a message directly from the terminal.
+
+**Example**
+
+git commit -m "Added commit_demo.txt file"
+
+**Screenshot**
+
+![git commit message](screenshots/git_commit.png)
+
+
+## git commit --amend
+
+**Syntax**
+
+git commit --amend
+
+**Purpose**
+
+Modifies the most recent commit by changing its message or adding new changes.
+
+**Example**
+
+git commit --amend
+
+**Screenshot**
+
+![git commit amend](screenshots/git_amend.png)
+
+
+## git commit --amend --no-edit
+
+**Syntax**
+
+git commit --amend --no-edit
+
+**Purpose**
+
+Updates the most recent commit without changing the commit message.
+
+**Example**
+
+git commit --amend --no-edit
+
+**Screenshot**
+
+![git commit no edit](screenshots/git_commit_no_edit.png)
