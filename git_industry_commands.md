@@ -541,3 +541,42 @@ Creates a new branch and switches to it using the newer Git switch command.
 **Example**
 
 git switch -c feature2
+
+# Merge & Integration Commands
+
+## git merge
+
+**Syntax**
+
+git merge <branch-name>
+
+**Purpose**
+
+Combines changes from another branch into the current branch.
+
+**Example**
+
+git merge feature_merge
+
+**Screenshot**
+
+![git merge](screenshots/git_merge.png)
+
+
+## git merge --no-ff
+
+**Syntax**
+
+git merge --no-ff <branch-name>
+
+**Purpose**
+
+Performs a merge while always creating a merge commit, even when a fast-forward merge is possible.
+
+**Example**
+
+git merge --no-ff feature_noff
+
+**Screenshot**
+
+![git merge no ff](screenshots/git_noff.png)
