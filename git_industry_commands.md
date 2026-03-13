@@ -580,3 +580,595 @@ git merge --no-ff feature_noff
 **Screenshot**
 
 ![git merge no ff](screenshots/git_noff.png)
+
+# Remote Repository Commands
+
+## git remote
+
+**Syntax**
+
+git remote
+
+**Purpose**
+
+Displays the list of remote repositories connected to the local repository.
+
+**Example**
+
+git remote
+
+**Screenshot**
+
+![git remote](screenshots/git_remote.png)
+
+---
+
+## git remote -v
+
+**Syntax**
+
+git remote -v
+
+**Purpose**
+
+Shows the remote repository URLs for fetching and pushing.
+
+**Example**
+
+git remote -v
+
+**Screenshot**
+
+![git remote v](screenshots/git_remote.png)
+
+---
+
+## git remote add
+
+**Syntax**
+
+git remote add <name> <repository-url>
+
+**Purpose**
+
+Adds a new remote repository reference to the local repository.
+
+**Example**
+
+git remote add origin https://github.com/afsheen-220147/git-industry-commands.git
+
+**Screenshot**
+
+![git remote add](screenshots/git_remote.png)
+
+---
+
+## git remote remove
+
+**Syntax**
+
+git remote remove <name>
+
+**Purpose**
+
+Removes a remote repository connection from the local repository.
+
+**Example**
+
+git remote remove origin
+
+**Screenshot**
+
+![git remote remove](screenshots/git_remote.png)
+
+---
+
+## git fetch
+
+**Syntax**
+
+git fetch
+
+**Purpose**
+
+Downloads new data from the remote repository without merging it into the current branch.
+
+**Example**
+
+git fetch
+
+**Screenshot**
+
+![git fetch](screenshots/git_remote.png)
+
+---
+
+## git fetch --all
+
+**Syntax**
+
+git fetch --all
+
+**Purpose**
+
+Fetches updates from all configured remote repositories.
+
+**Example**
+
+git fetch --all
+
+**Screenshot**
+
+![git fetch all](screenshots/git_fetch_all.png)
+
+---
+
+## git pull
+
+**Syntax**
+
+git pull
+
+**Purpose**
+
+Fetches changes from the remote repository and merges them into the current branch.
+
+**Example**
+
+git pull
+
+
+## git pull --rebase
+
+**Syntax**
+
+git pull --rebase
+
+**Purpose**
+
+Fetches changes from the remote repository and rebases the current branch instead of merging.
+
+**Example**
+
+git pull --rebase
+
+
+
+## git push
+
+**Syntax**
+
+git push
+
+**Purpose**
+
+Uploads local commits to the remote repository.
+
+**Example**
+
+git push
+
+
+
+## git push -u origin branch-name
+
+**Syntax**
+
+git push -u origin <branch-name>
+
+**Purpose**
+
+Pushes a branch to the remote repository and sets the upstream tracking reference.
+
+**Example**
+
+git push -u origin main
+
+
+
+## git push --force
+
+**Syntax**
+
+git push --force
+
+**Purpose**
+
+Forces an update to the remote repository, overwriting history if necessary.
+
+**Example**
+
+git push --force
+
+# Stash Commands
+
+## git stash
+**Syntax**  
+git stash  
+
+**Purpose**  
+Temporarily saves uncommitted changes in the working directory and reverts the files to the last committed state.
+
+**Example**  
+git stash
+
+---
+
+## git stash list
+**Syntax**  
+git stash list  
+
+**Purpose**  
+Displays the list of all saved stashes.
+
+**Example**  
+git stash list
+
+---
+
+## git stash pop
+**Syntax**  
+git stash pop  
+
+**Purpose**  
+Applies the most recent stash and removes it from the stash list.
+
+**Example**  
+git stash pop
+
+---
+
+## git stash apply
+**Syntax**  
+git stash apply  
+
+**Purpose**  
+Applies a stash without removing it from the stash list.
+
+**Example**  
+git stash apply
+
+---
+
+## git stash drop
+**Syntax**  
+git stash drop stash@{0}  
+
+**Purpose**  
+Deletes a specific stash entry.
+
+**Example**  
+git stash drop stash@{0}
+
+---
+
+## git stash clear
+**Syntax**  
+git stash clear  
+
+**Purpose**  
+Deletes all stashes stored in the repository.
+
+**Example**  
+git stash clear
+
+---
+
+# Reset & Undo Commands
+
+## git reset
+**Syntax**  
+git reset  
+
+**Purpose**  
+Unstages files while keeping the changes in the working directory.
+
+**Example**  
+git reset demo.txt
+
+---
+
+## git reset --soft
+**Syntax**  
+git reset --soft HEAD~1  
+
+**Purpose**  
+Moves HEAD to a previous commit but keeps all changes staged.
+
+**Example**  
+git reset --soft HEAD~1
+
+---
+
+## git reset --mixed
+**Syntax**  
+git reset --mixed HEAD~1  
+
+**Purpose**  
+Moves HEAD to a previous commit and unstages the changes.
+
+**Example**  
+git reset --mixed HEAD~1
+
+---
+
+## git reset --hard
+**Syntax**  
+git reset --hard HEAD~1  
+
+**Purpose**  
+Moves HEAD to a previous commit and removes all working directory changes.
+
+**Example**  
+git reset --hard HEAD~1
+
+---
+
+## git revert
+**Syntax**  
+git revert <commit-id>  
+
+**Purpose**  
+Creates a new commit that reverses changes introduced by a previous commit.
+
+**Example**  
+git revert HEAD
+
+---
+
+## git clean -f
+**Syntax**  
+git clean -f  
+
+**Purpose**  
+Removes untracked files from the working directory.
+
+**Example**  
+git clean -f
+
+---
+
+## git clean -fd
+**Syntax**  
+git clean -fd  
+
+**Purpose**  
+Removes untracked files and directories from the working directory.
+
+**Example**  
+git clean -fd
+
+---
+
+# Rebasing Commands
+
+## git rebase
+**Syntax**  
+git rebase <branch-name>  
+
+**Purpose**  
+Reapplies commits from the current branch onto another base branch.
+
+**Example**  
+git rebase main
+
+---
+
+## git rebase -i
+**Syntax**  
+git rebase -i HEAD~3  
+
+**Purpose**  
+Starts an interactive rebase to edit, reorder, or squash commits.
+
+**Example**  
+git rebase -i HEAD~3
+
+---
+
+## git rebase --continue
+**Syntax**  
+git rebase --continue  
+
+**Purpose**  
+Continues the rebase process after resolving conflicts.
+
+**Example**  
+git rebase --continue
+
+---
+
+## git rebase --abort
+**Syntax**  
+git rebase --abort  
+
+**Purpose**  
+Stops the rebase operation and returns the branch to its previous state.
+
+**Example**  
+git rebase --abort
+
+---
+
+# Cherry Pick & Patch Commands
+
+## git cherry-pick
+**Syntax**  
+git cherry-pick <commit-id>  
+
+**Purpose**  
+Applies a specific commit from another branch to the current branch.
+
+**Example**  
+git cherry-pick 3a4b5c
+
+---
+
+## git format-patch
+**Syntax**  
+git format-patch HEAD~1  
+
+**Purpose**  
+Creates patch files from commits.
+
+**Example**  
+git format-patch HEAD~1
+
+---
+
+## git apply
+**Syntax**  
+git apply <patch-file>  
+
+**Purpose**  
+Applies the changes from a patch file to the working directory.
+
+**Example**  
+git apply update.patch
+
+---
+
+## git am
+**Syntax**  
+git am <patch-file>  
+
+**Purpose**  
+Applies patches generated by format-patch and records them as commits.
+
+**Example**  
+git am update.patch
+
+---
+
+# Tagging Commands
+
+## git tag
+**Syntax**  
+git tag  
+
+**Purpose**  
+Lists all tags in the repository.
+
+**Example**  
+git tag
+
+
+
+## git tag -a
+**Syntax**  
+git tag -a v1.0 -m "Release version 1.0"  
+
+**Purpose**  
+Creates an annotated tag for a specific commit.
+
+**Example**  
+git tag -a v1.0 -m "Release version 1.0 by afsheen-220147"
+
+
+
+## git tag -d
+**Syntax**  
+git tag -d v1.0  
+
+**Purpose**  
+Deletes a tag from the repository.
+
+**Example**  
+git tag -d v1.0
+
+
+
+## git push origin --tags
+**Syntax**  
+git push origin --tags  
+
+**Purpose**  
+Pushes all local tags to the remote repository.
+
+**Example**  
+git push origin --tags
+
+
+
+# Submodule Commands
+
+## git submodule add
+**Syntax**  
+git submodule add <repository-url>  
+
+**Purpose**  
+Adds another repository as a submodule inside the current project.
+
+**Example**  
+git submodule add https://github.com/afsheen-220147/git-industry-commands.git
+
+
+
+## git submodule init
+**Syntax**  
+git submodule init  
+
+**Purpose**  
+Initializes local configuration for submodules.
+
+**Example**  
+git submodule init
+
+
+
+## git submodule update
+**Syntax**  
+git submodule update  
+
+**Purpose**  
+Fetches and checks out the correct commit for submodules.
+
+**Example**  
+git submodule update
+
+
+# Debugging Commands
+
+## git bisect
+**Syntax**  
+git bisect  
+
+**Purpose**  
+Starts the process of identifying the commit that introduced a bug.
+
+**Example**  
+git bisect start
+
+
+
+## git bisect start
+**Syntax**  
+git bisect start  
+
+**Purpose**  
+Begins the binary search process for finding a faulty commit.
+
+**Example**  
+git bisect start
+
+
+## git bisect good
+**Syntax**  
+git bisect good <commit-id>  
+
+**Purpose**  
+Marks a commit as good during the debugging process.
+
+**Example**  
+git bisect good 1a2b3c
+
+
+## git bisect bad
+**Syntax**  
+git bisect bad <commit-id>  
+
+**Purpose**  
+Marks a commit as bad to help locate the bug.
+
+**Example**  
+git bisect bad 4d5e6f
